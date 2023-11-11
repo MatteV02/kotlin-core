@@ -99,7 +99,8 @@ where:
 
 ---
 
-**[Fibonacci.kt]** Write a method accepting an `Int` and returning a `Array<Long>` composed of the first n numbers of the
+**[Fibonacci.kt]** Write a method accepting an `Int` and returning a `Array<Long>` composed of the first n numbers of
+the
 Fibonacci series.
 
 Examples:
@@ -122,8 +123,10 @@ where:
 
 ---
 
-**[BubbleSort.kt]** Write two methods for ordering an `Array<Int>`. The only difference between the two methods is that the
-first one orders the original `Array<Int>` directly and returns `Unit`, while the second one returns a sorted COPY of the
+**[BubbleSort.kt]** Write two methods for ordering an `Array<Int>`. The only difference between the two methods is that
+the
+first one orders the original `Array<Int>` directly and returns `Unit`, while the second one returns a sorted COPY of
+the
 original `Array<Int>` (you can use the Bubble Sort algorithm).
 
 Examples:
@@ -150,7 +153,8 @@ where:
 
 ---
 
-**[MoveZeroEnd.kt]** Write a method accepting an `Array<Int>` eventually containing zeros and returning an `Array<Int>` in which all
+**[MoveZeroEnd.kt]** Write a method accepting an `Array<Int>` eventually containing zeros and returning an `Array<Int>`
+in which all
 the zeros are at the end of the array. Maintain the relative order of the other (non-zero) elements.
 
 Examples:
@@ -242,7 +246,8 @@ where:
 ---
 
 **[FizzBuzz.java]** Consider the series of numbers beginning at **start** and running up to but not including **end**.
-For example start=1 and end=5 gives the series 1, 2, 3, 4. Return a new `Array<String>` array containing the string form of
+For example start=1 and end=5 gives the series 1, 2, 3, 4. Return a new `Array<String>` array containing the string form
+of
 these numbers. For multiples of 3, use "Fizz" instead of the number, for multiples of 5 use "Buzz", and for multiples of
 both 3 and 5 use "FizzBuzz" (see Integer.toString()).
 
@@ -267,7 +272,8 @@ where:
 
 ---
 
-**[MatchUp.kt]** Given two `Array<Int>` v1 and v2 of the same length, for every element in v1, consider the corresponding
+**[MatchUp.kt]** Given two `Array<Int>` v1 and v2 of the same length, for every element in v1, consider the
+corresponding
 element in v2 (at the same index). Return the count of the number of times that the two elements differ by 2 or less,
 but are not equal.
 
@@ -315,7 +321,8 @@ where:
 
 ---
 
-**[SearchArray.kt]** Given a `Array<String>` and a `String` return true if the `String` is contained within the `Array<String>`.
+**[SearchArray.kt]** Given a `Array<String>` and a `String` return true if the `String` is contained within
+the `Array<String>`.
 If the `String` is not present return false. Write two different versions:
 (a) uses brute-force search (i.e., which is slow! because tests all elements of the array);
 (b) sorts the array and uses binary search (which is much faster!) (see `Array<out T>.binarySearch`)
