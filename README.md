@@ -1,5 +1,6 @@
 # Kotlin-core
-> [!WARNING] This repository is still a work in progress: links may not work, exercises may be missing or still not resolved, etc.  
+> [!WARNING] 
+> This repository is still a work in progress: links may not work, exercises may be missing or still not resolved, etc.  
 > If you have particular requests, please open an issue!
 
 This repository is an adaptation of the exercises provided in [nbicocchi/java-core](https://github.com/nbicocchi/java-core/tree/main) for Kotlin programming language.  
