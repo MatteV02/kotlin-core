@@ -4,11 +4,12 @@
 > If you have particular requests (eg. you want an exercise to be resolved soon, can't find anymore a file, link broken), **please open an issue**!
 
 This repository is an adaptation of the exercises provided in [nbicocchi/java-core](https://github.com/nbicocchi/java-core/tree/main) for Kotlin programming language.  
-I've made this repo mainly for making practice in Kotlin language. Feel free to comment my work through opening GitHub issues! Any help is accepted!
+I've made this repo mainly for making practice in Kotlin language. Feel free to comment my work by opening GitHub issues! Any help is accepted!
 
 ## TODOs
 - [ ] upload exercises from [nbicocchi/java-core](https://github.com/nbicocchi/java-core/tree/main)
   - [ ] adapt the exercises texts to Kotlin language
+- [ ] adapt README.md package descriptions to Kotlin
 - [ ] resolve exercises
   - [ ] [warmup](README.md#1-basics)
   - [ ] [arrays](README.md#1-basics)
@@ -33,9 +34,9 @@ I've made this repo mainly for making practice in Kotlin language. Feel free to 
 - Loops
 - Arrays (and brief introduction to ArrayList)
 - Strings
-- Input and output
+- Input and output (`print`, `println`, input from keyboard)
 - Random numbers
-- Coding Standard
+- [Coding Standard](https://kotlinlang.org/docs/coding-conventions.html)
 
 ### 2. Object Oriented Design
 > _Packages_: [com.MatteV02.exercises.oop](src/main/kotlin/com/MatteV02/exercises/oop)
