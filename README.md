@@ -18,7 +18,7 @@ I've made this repo mainly for making practice in Kotlin language. Feel free to 
   - [ ] [functional](README.md#5-functional-programming)
   - [ ] [exception](README.md#6-exceptions)
   - [ ] [IO](README.md#7-io-framework)
-  - [ ] [multi-threading](README.md)
+  - [ ] [multi-threading](README.md#8-multi-threading)
 - [ ] Project modules
   - [ ] GUI application with [Kotlin multiplatform](https://www.jetbrains.com/kotlin-multiplatform/)
   - [ ] DB application
