@@ -1,7 +1,7 @@
 # Kotlin Arrays
 
 **[CopyArray.kt]** Write a method accepting a `Array<Double>` and returning a copy of the initial `Array<Double>` (see
-Array<T>.copyOf()).
+`Array<T>.copyOf()`).
 
 Examples:
 
@@ -22,8 +22,8 @@ where:
 
 ---
 
-**[FillArray.kt]** Write a method returning an `Array<Double>` already filled with values (see Array<T>.fill,
-kotlin.random.Random).
+**[FillArray.kt]** Write a method returning an `Array<Double>` already filled with values (see `Array<T>.fill`,
+`kotlin.random.Random`).
 
 Examples:
 
@@ -249,7 +249,7 @@ where:
 For example start=1 and end=5 gives the series 1, 2, 3, 4. Return a new `Array<String>` array containing the string form
 of
 these numbers. For multiples of 3, use "Fizz" instead of the number, for multiples of 5 use "Buzz", and for multiples of
-both 3 and 5 use "FizzBuzz" (see Integer.toString()).
+both 3 and 5 use "FizzBuzz" (see `Int.toString()`).
 
 Examples:
 
