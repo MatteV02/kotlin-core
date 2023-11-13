@@ -117,7 +117,8 @@ where:
 
 ---
 
-**[GoodAroundTheBeginning.kt]** Write a method accepting a string and returning true if "good" appears either at index 0 or 1 of the given string (see `String.startsWith()` method).
+**[GoodAroundTheBeginning.kt]** Write a method accepting a string and returning true if "good" appears either at index 0
+or 1 of the given string (see `String.startsWith()` method).
 
 Examples:
 
@@ -165,7 +166,9 @@ where:
 
 ---
 
-**[DuplicateChars.kt]** Write a method accepting a string and returning all recurring characters contained into the string as a `Array<Char>`. More specifically, recurring characters have to be returned in alphabetical order (see `String.contains()`, `String.toCharArray()`). For example: headmistressship -> [e,h,i,s].
+**[DuplicateChars.kt]** Write a method accepting a string and returning all recurring characters contained into the
+string as a `Array<Char>`. More specifically, recurring characters have to be returned in alphabetical order (
+see `String.contains()`, `String.toCharArray()`). For example: headmistressship -> [e,h,i,s].
 
 Examples:
 
@@ -188,7 +191,8 @@ where:
 
 ---
 
-**[Palindrome.kt]** Write a method accepting a string and returning true if the string is a palindrome (see `StringBuilder` class).
+**[Palindrome.kt]** Write a method accepting a string and returning true if the string is a palindrome (
+see `StringBuilder` class).
 
 Examples:
 
@@ -211,7 +215,9 @@ where:
 
 ---
 
-**[CountYZ.kt]** Write a method accepting a string, and counting the number of words ending in 'y' or 'z' so the 'y' in "heavy" and the 'z' in "fez" count, but not the 'y' in "yellow" (not case-sensitive) (you can use Java `Scanner` class if you are in trouble).
+**[CountYZ.kt]** Write a method accepting a string, and counting the number of words ending in 'y' or 'z' so the 'y'
+in "heavy" and the 'z' in "fez" count, but not the 'y' in "yellow" (not case-sensitive) (you can use Java `Scanner`
+class if you are in trouble).
 
 Examples:
 
@@ -233,7 +239,9 @@ where:
 
 ---
 
-**[EqualIsNot.kt]** Write a method accepting a string, and returning true if the number of appearances of "is" anywhere in the string is equal to the number of appearances of "not" anywhere in the string (case-sensitive) (See `String.indexOf()`).
+**[EqualIsNot.kt]** Write a method accepting a string, and returning true if the number of appearances of "is" anywhere
+in the string is equal to the number of appearances of "not" anywhere in the string (case-sensitive) (
+See `String.indexOf()`).
 
 Examples:
 
@@ -255,7 +263,8 @@ where:
 
 ---
 
-**[SumDigits.kt]** Given a string, return the sum of the digits 0-9 that appear in the string, ignoring all other characters. Return 0 if there are no digits in the string. (see `Character` class)
+**[SumDigits.kt]** Given a string, return the sum of the digits 0-9 that appear in the string, ignoring all other
+characters. Return 0 if there are no digits in the string. (see `Character` class)
 
 Examples:
 

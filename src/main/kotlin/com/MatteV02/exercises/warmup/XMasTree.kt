@@ -1,7 +1,8 @@
 package com.MatteV02.exercises.warmup
 
 fun main() {
-	println("""
+    println(
+        """
 +--------------[The Christmass Child Eater Monster]-------------------+
 |                               /\                                    |
 |                               ||                                    |
@@ -33,5 +34,6 @@ Just because you aint scared of monster dont mean he wont eat ya.
 Some times eats parents too, forgot to say that earlier.
 
                           Credits: Krogg <krogg.no.to.spam@inspace.net>
-	""".trimIndent())
+	""".trimIndent()
+    )
 }

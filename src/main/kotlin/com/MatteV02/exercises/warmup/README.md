@@ -47,14 +47,17 @@ We are in trouble if they are both smiling or if neither of them is smiling.
 Write a program asking the user if monkeys are smiling and print an alert if we are in trouble (
 see `kotlin.io.readln()`).
 
-**[TheRightPrice.kt]** The computer selects a random number between [0, 100] representing the price of an imaginary item.
+**[TheRightPrice.kt]** The computer selects a random number between [0, 100] representing the price of an imaginary
+item.
 Two users are asked to guess the right price. The user which proposed the number closer to the right price wins.
-Note that `math.absoluteValue` returns the absolute value of a number (see `kotlin.random.Random`, `kotlin.io.readln()`).
+Note that `math.absoluteValue` returns the absolute value of a number (
+see `kotlin.random.Random`, `kotlin.io.readln()`).
 
 **[InterestRate.kt]** Write a program that prints the balance of an account after the first, second, and third year.
 The account has an initial balance of $1,000 and earns 5 percent interest per year.
 
-**[EstimatePI.kt]** It is possible to get an estimate of the mathematical constant π by using a random process. The idea is
+**[EstimatePI.kt]** It is possible to get an estimate of the mathematical constant π by using a random process. The idea
+is
 based on the fact that the area of a circle of radius 1 is equal to π, and the area of a quarter of that circle is π/4.
 
 ```
