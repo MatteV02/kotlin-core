@@ -1,7 +1,7 @@
 # Kotlin Strings
 
 **[Concatenate.kt]** Write a method accepting a `Array<String>` returning a single string representing the concatenation
-of all strings of the array (see `java.lang.StringBuilder` class).
+of all strings of the array (see `text.StringBuilder` class).
 
 Examples:
 
