@@ -36,7 +36,7 @@ The method has the following prototype:
 
 ```kotlin
 fun fillArray(size: Int, value: Double, addNoise: Boolean): Array<Double> {
-	// write your code here
+    // write your code here
 }
 ```
 
@@ -62,7 +62,7 @@ The method has the following prototype:
 
 ```kotlin
 fun divideArray(v: Array<Double>, factor: Double): Array<Double> {
-	// write your code here
+    // write your code here
 }
 ```
 
@@ -88,7 +88,7 @@ The method has the following prototype:
 
 ```kotlin
 fun divideArrays(v1: Array<Double>, v2: Array<Double>): Array<Double>? {
-	// write your code here
+    // write your code here
 }
 ```
 
@@ -113,7 +113,7 @@ The method has the following prototype:
 
 ```kotlin
 fun fibonacci(n: Int): Array<Long> {
-	// write your code here
+    // write your code here
 }
 ```
 
@@ -139,11 +139,11 @@ The method has the following prototype:
 
 ```kotlin
 fun bubbleSort(v: Array<Int>) {
-	// write your code here
+    // write your code here
 }
 
 fun bubbleSortCopy(v: Array<Int>): Array<Int> {
-	// write your code here
+    // write your code here
 }
 ```
 

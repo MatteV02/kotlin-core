@@ -13,7 +13,7 @@ The method has the following prototype:
 
 ```kotlin
 fun concatenate(strings: Array<String>): String {
-	// write your code here
+    // write your code here
 }
 ```
 
@@ -35,7 +35,7 @@ The method has the following prototype:
 
 ```kotlin
 fun reverse(string: String): String {
-	// write your code here
+    // write your code here
 }
 ```
 
@@ -58,7 +58,7 @@ The method has the following prototype:
 
 ```kotlin
 fun removeFirstTwoChars(string: String): String {
-	// write your code here
+    // write your code here
 }
 ```
 
@@ -84,7 +84,7 @@ The method has the following prototype:
 
 ```kotlin
 fun removeFirstTwoCharsIf(string: String): String {
-	// write your code here
+    // write your code here
 }
 ```
 
@@ -107,7 +107,7 @@ The method has the following prototype:
 
 ```kotlin
 fun goodAtTheBeginning(string: String): Boolean {
-	// write your code here
+    // write your code here
 }
 ```
 
@@ -131,7 +131,7 @@ The method has the following prototype:
 
 ```kotlin
 fun goodAroundTheBeginning(string: String): Boolean {
-	// write your code here
+    // write your code here
 }
 ```
 
@@ -156,7 +156,7 @@ The method has the following prototype:
 
 ```kotlin
 fun removeFirstLast(string: String): String {
-	// write your code here
+    // write your code here
 }
 ```
 
@@ -181,7 +181,7 @@ The method has the following prototype:
 
 ```kotlin
 fun duplicateChars(string: String): Array<Char> {
-	// write your code here
+    // write your code here
 }
 ```
 
@@ -205,7 +205,7 @@ The method has the following prototype:
 
 ```kotlin
 fun isPalindrome(string: String): Boolean {
-	// write your code here
+    // write your code here
 }
 ```
 
@@ -229,7 +229,7 @@ The method has the following prototype:
 
 ```kotlin
 fun countYZ(string: String): Int {
-	// write your code here
+    // write your code here
 }
 ```
 
@@ -253,7 +253,7 @@ The method has the following prototype:
 
 ```kotlin
 fun equalIsNot(string: String): Boolean {
-	// write your code here
+    // write your code here
 }
 ```
 
@@ -276,7 +276,7 @@ The method has the following prototype:
 
 ```kotlin
 fun sumDigits(string: String): Int {
-	// write your code here
+    // write your code here
 }
 ```
 
