@@ -35,8 +35,7 @@ issues! Any help is accepted!
 
 ### 1. Basics
 
->
-_Packages_: [com.MatteV02.exercises.warmup](src/main/kotlin/com/MatteV02/exercises/warmup), [com.MatteV02.exercises.arrays](src/main/kotlin/com/MatteV02/exercises/arrays), [com.MatteV02.exercises.strings](src/main/kotlin/com/MatteV02/exercises/strings)
+> _Packages_: [com.MatteV02.exercises.warmup](src/main/kotlin/com/MatteV02/exercises/warmup), [com.MatteV02.exercises.arrays](src/main/kotlin/com/MatteV02/exercises/arrays), [com.MatteV02.exercises.strings](src/main/kotlin/com/MatteV02/exercises/strings)
 
 - Variables, methods and parameter passing
 - Fundamental data types
