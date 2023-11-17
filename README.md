@@ -17,9 +17,9 @@ issues! Any help is accepted!
 	- [ ] adapt the exercises texts to Kotlin language
 - [ ] adapt README.md package descriptions to Kotlin
 - [ ] resolve exercises
-	- [ ] [warmup](README.md#1-basics)
-	- [ ] [arrays](README.md#1-basics)
-	- [ ] [strings](README.md#1-basics)
+	- [x] [warmup](README.md#1-basics)
+	- [x] [arrays](README.md#1-basics)
+	- [x] [strings](README.md#1-basics)
 	- [ ] [oop](README.md#2-object-oriented-design)
 	- [ ] [collections](README.md#3-data-structures-kotlin-collections)
 	- [ ] [generics](README.md#4-generic-data-structures-generics)
