@@ -1,5 +1,7 @@
 # Kotlin-core
 
+![logo](images/kotlin-core-logo.png)
+
 > [!WARNING]
 > This repository is still a work in progress: links may not work, exercises may be missing or still not resolved,
 > etc.  
