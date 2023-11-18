@@ -188,7 +188,7 @@ The method has the following prototype:
 
 ```kotlin
 fun splitter(input: Int): Array<Int> {
-	// write your code here
+    // write your code here
 }
 ```
 
@@ -363,6 +363,6 @@ The method has the following prototype:
 
 ```kotlin
 fun deepCopy(original: Array<Array<Int>>): Array<Array<Int>> {
-	// write your code here
+    // write your code here
 }
 ```

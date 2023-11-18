@@ -11,7 +11,7 @@ class RationalNumberTest : FunSpec({
     test("add") {
         rationalNumber1.add(rationalNumber2) shouldBe RationalNumber(1, 1)
 
-        rationalNumber1.add(RationalNumber(0,1)) shouldBe rationalNumber1
+        rationalNumber1.add(RationalNumber(0, 1)) shouldBe rationalNumber1
     }
 
     test("multiply") {

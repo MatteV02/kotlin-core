@@ -14,15 +14,15 @@ Refer to the UML diagram, JavaDoc documentation, and unit tests for further insp
 
 ```mermaid
 classDiagram
-direction BT
-class ClickCounter {
-    ~ value: Int
-    + ClickCounter()
-    + getValue() Int
-    + click() 
-    + undo() 
-    + reset() 
-}
+    direction BT
+    class ClickCounter {
+        ~ value: Int
+        + ClickCounter()
+        + getValue() Int
+        + click()
+        + undo()
+        + reset()
+    }
 ```
 
 ---
@@ -52,30 +52,30 @@ import kotlin.math.max
 import kotlin.math.min
 
 fun greatestCommonDivisor(a: Int, b: Int): Int {
-	if (a == 0) {
-		if (b == 0) {
-			throw IllegalArgumentException("cannot pass (0,0) to greatestCommonDivisor")
-		}
-		return b
-	}
-	
-	if (b == 0) {
+    if (a == 0) {
+        if (b == 0) {
+            throw IllegalArgumentException("cannot pass (0,0) to greatestCommonDivisor")
+        }
+        return b
+    }
+
+    if (b == 0) {
         return a
     }
-	
-	val max = max(a, b)
-	val min = min(a, b)
-	
-	val rest = max % min
-	return if (max % min == 0) {
-	  min
-	} else {
-	  greatestCommonDivisor(min, rest)
-	}
+
+    val max = max(a, b)
+    val min = min(a, b)
+
+    val rest = max % min
+    return if (max % min == 0) {
+        min
+    } else {
+        greatestCommonDivisor(min, rest)
+    }
 }
 
 fun leastCommonMultiple(a: Int, b: Int): Int {
-	return (a * b).absoluteValue / greatestCommonDivisor(a, b)
+    return (a * b).absoluteValue / greatestCommonDivisor(a, b)
 }
 ```
 
@@ -83,21 +83,21 @@ Refer to the UML diagram, JavaDoc documentation, and unit tests for further insp
 
 ```mermaid
 classDiagram
-direction BT
-class RationalNumber {
-    ~ denominator: Int
-    ~ numerator: Int
-    + RationalNumber(Int, Int)
-    + getNumerator() Int
-    + getDenominator() Int
-    + add(RationalNumber) RationalNumber
-    + multiply(RationalNumber) RationalNumber
-    ~ leastCommonMultiple(Int, Int) Int
-    ~ greatestCommonDivisor(Int, Int) Int
-    + equals(Any) Boolean
-    + hashCode() Int
-    + toString() String
-}
+    direction BT
+    class RationalNumber {
+        ~ denominator: Int
+        ~ numerator: Int
+        + RationalNumber(Int, Int)
+        + getNumerator() Int
+        + getDenominator() Int
+        + add(RationalNumber) RationalNumber
+        + multiply(RationalNumber) RationalNumber
+        ~ leastCommonMultiple(Int, Int) Int
+        ~ greatestCommonDivisor(Int, Int) Int
+        + equals(Any) Boolean
+        + hashCode() Int
+        + toString() String
+    }
 ```
 
 ---
@@ -120,21 +120,21 @@ Refer to the UML diagram, JavaDoc documentation, and unit tests for further insp
 
 ```mermaid
 classDiagram
-direction BT
-class Circle {
-    ~ center: Point
-    ~ radius: Int
-    + Circle(Point, Int)
-    + getCenter() Point
-    + getRadius() Int
-    + setCenter(Point)
-    + setRadius(Int)
-    + getPerimeter() Double
-    + getArea() Double
-    + contains(Point) Boolean
-    + translate(Int, Int)
-    + toString() String
-}
+    direction BT
+    class Circle {
+        ~ center: Point
+        ~ radius: Int
+        + Circle(Point, Int)
+        + getCenter() Point
+        + getRadius() Int
+        + setCenter(Point)
+        + setRadius(Int)
+        + getPerimeter() Double
+        + getArea() Double
+        + contains(Point) Boolean
+        + translate(Int, Int)
+        + toString() String
+    }
 ```
 
 ---
@@ -155,15 +155,15 @@ Refer to the UML diagram, JavaDoc documentation, and unit tests for further insp
 
 ```mermaid
 classDiagram
-direction BT
-class Polygon {
-    ~ vertices : Array~Point~
-    + Polygon(Array~Point~)
-    + getVerticesCount() Int
-    + getPerimeter() Double
-    + getArea() Double
-    + toString() String
-}
+    direction BT
+    class Polygon {
+        ~ vertices: Array~Point~
+        + Polygon(Array~Point~)
+        + getVerticesCount() Int
+        + getPerimeter() Double
+        + getArea() Double
+        + toString() String
+    }
 ```
 
 ---
@@ -182,15 +182,15 @@ Refer to the UML diagram, JavaDoc documentation, and unit tests for further insp
 
 ```mermaid
 classDiagram
-direction BT
-class BankAccount {
-    ~ balance: Double
-    + BankAccount()
-    + BankAccount(Double)
-    + getBalance() Double
-    + deposit(Double)
-    + withdraw(Double)
-}
+    direction BT
+    class BankAccount {
+        ~ balance: Double
+        + BankAccount()
+        + BankAccount(Double)
+        + getBalance() Double
+        + deposit(Double)
+        + withdraw(Double)
+    }
 ```
 
 ---
@@ -202,8 +202,8 @@ internally keeps an `Int` array, enlarges it when needed, and provides its key f
   items).
 * `get(index: Int)` returning the element at the specified index.
 * `set(index: Int, value: Int)` setting the element at the specified index with value. If the underlying `Array<Int>`
-  capacity is smaller than index, a new `Array<Int>` (with a capacity of index * 2 items) have to be allocated. All the newly
-  allocated elements have to be set to 0.
+  capacity is smaller than index, a new `Array<Int>` (with a capacity of index * 2 items) have to be allocated. All the
+  newly allocated elements have to be set to 0.
 * `contains(Int value): Boolean` returning true if the specified value is contained within the internal array.
 * `fill(Int)` setting all the elements of the internal array to the specified value.
 * `length(): Int` returning the capacity of the internal array.
@@ -213,18 +213,18 @@ Refer to the UML diagram, JavaDoc documentation, and unit tests for further insp
 
 ```mermaid
 classDiagram
-direction BT
-class EnhancedResizableArray {
-    + const DEFAULT_CAPACITY = 4: Int
-    ~ v: Array~Int~
-    + EnhancedResizableArray()
-    + get(Int) Int
-    + set(Int, Int)
-    + contains(Int) Boolean
-    + fill(Int)
-    + length() Int
-    + toArray() Array~Int~
-}
+    direction BT
+    class EnhancedResizableArray {
+        + const DEFAULT_CAPACITY = 4: Int
+        ~ v: Array~Int~
+        + EnhancedResizableArray()
+        + get(Int) Int
+        + set(Int, Int)
+        + contains(Int) Boolean
+        + fill(Int)
+        + length() Int
+        + toArray() Array~Int~
+    }
 ```
 
 ---
@@ -240,7 +240,7 @@ Supply a method to add a line of text to the body of the letter.
 
 ```kotlin
 fun addLine(line: String) {
-    
+
 }
 ```
 
@@ -248,7 +248,7 @@ Supply a method that returns the entire text of the letter.
 
 ```kotlin
 fun getText(): String {
-    
+
 }
 ```
 
@@ -271,42 +271,43 @@ Refer to the UML diagram, JavaDoc documentation, and unit tests for further insp
 
 ```mermaid
 classDiagram
-direction BT
-class Letter {
-    ~ from : String
-    ~ to : String
-    ~ lines : StringBuilder
-    + Letter(String, String)
-    + addLine(String)
-    + getText() String
-}
+    direction BT
+    class Letter {
+        ~ from: String
+        ~ to: String
+        ~ lines: StringBuilder
+        + Letter(String, String)
+        + addLine(String)
+        + getText() String
+    }
 ```
 
 ---
 
 **[reverse package]** Given the Reverser interface defining a single method *reverse* for reversing a string, provide
-two implementations namely ReverserFast and ReverserSlow providing two different strategies for reversing a `String`. As a
-suggestion, ReverserSlow could use a char array (see `String.joinToString()`), while ReverserFast could use a `StringBuilder`.
+two implementations namely ReverserFast and ReverserSlow providing two different strategies for reversing a `String`. As
+a suggestion, ReverserSlow could use a char array (see `String.joinToString()`), while ReverserFast could use
+a`StringBuilder`.
 Provide also a simple main() in which the Reverser interface is implemented anonymously.
 
 Refer to the UML diagram, JavaDoc documentation, and unit tests for further inspiration.
 
 ```mermaid
 classDiagram
-direction BT
-class Reverser {
-    <<Interface>>
-    + reverse(String) String
-}
-class ReverserFast {
-    + reverse(String) String
-}
-class ReverserSlow {
-    + reverse(String) String
-}
+    direction BT
+    class Reverser {
+        <<Interface>>
+        + reverse(String) String
+    }
+    class ReverserFast {
+        + reverse(String) String
+    }
+    class ReverserSlow {
+        + reverse(String) String
+    }
 
-ReverserFast  ..|>  Reverser
-ReverserSlow  ..|>  Reverser
+    ReverserFast ..|> Reverser
+    ReverserSlow ..|> Reverser
 ```
 
 ---
@@ -325,49 +326,49 @@ Refer to the UML diagram, JavaDoc documentation, and unit tests for further insp
 
 ```mermaid
 classDiagram
-direction BT
-class Person {
-    ~ lastname: String
-    ~ name: String
-    ~ phone: String
-    + Person(String, String, String)
-    + getLastname() String
-    + getName() String
-    + getPhone() String
-    + setLastname(String)
-    + setName(String)
-    + setPhone(String)
-    + equals(Object) Boolean
-    + hashCode() Int
-    + toString() String
-}
-class PhoneBook {
-    <<Interface>>
-    + addPerson(Person) Boolean
-    + removePerson(Person) Boolean
-    + searchByLastname(String) Array~String~
-    + searchByNameAndLastname(String, String) Array~Person~
-}
-class PhoneBookArray {
-    + static final Int MAX_PERSONS = 256
-    ~ phoneBook : Array~Person~
-    + PhoneBookArray()
-    + addPerson(Person) Boolean
-    + removePerson(Person) Boolean
-    + searchByLastname(String) Array~Person~
-    + searchByNameAndLastname(String, String) Array~Person~
-}
-class PhoneBookList {
-    + static final int MAX_PERSONS = 256
-    ~ ArrayList~Person~ phoneBook
-    + PhoneBookList()
-    + addPerson(Person) Boolean
-    + removePerson(Person) Boolean
-    + searchByLastname(String) Array~Person~
-    + searchByNameAndLastname(String, String) Array~Person~
-}
-PhoneBookArray  ..|>  PhoneBook
-PhoneBookList  ..|>  PhoneBook
+    direction BT
+    class Person {
+        ~ lastname: String
+        ~ name: String
+        ~ phone: String
+        + Person(String, String, String)
+        + getLastname() String
+        + getName() String
+        + getPhone() String
+        + setLastname(String)
+        + setName(String)
+        + setPhone(String)
+        + equals(Object) Boolean
+        + hashCode() Int
+        + toString() String
+    }
+    class PhoneBook {
+        <<Interface>>
+        + addPerson(Person) Boolean
+        + removePerson(Person) Boolean
+        + searchByLastname(String) Array~String~
+        + searchByNameAndLastname(String, String) Array~Person~
+    }
+    class PhoneBookArray {
+        + static final Int MAX_PERSONS = 256
+        ~ phoneBook: Array~Person~
+        + PhoneBookArray()
+        + addPerson(Person) Boolean
+        + removePerson(Person) Boolean
+        + searchByLastname(String) Array~Person~
+        + searchByNameAndLastname(String, String) Array~Person~
+    }
+    class PhoneBookList {
+        + static final int MAX_PERSONS = 256
+        ~ ArrayList~Person~ phoneBook
+        + PhoneBookList()
+        + addPerson(Person) Boolean
+        + removePerson(Person) Boolean
+        + searchByLastname(String) Array~Person~
+        + searchByNameAndLastname(String, String) Array~Person~
+    }
+    PhoneBookArray ..|> PhoneBook
+    PhoneBookList ..|> PhoneBook
 ```
 
 ---
@@ -387,58 +388,58 @@ Refer to the UML diagram, JavaDoc documentation, and unit tests for further insp
 
 ```mermaid
 classDiagram
-direction BT
-class AbstractBankAccount {
-    <<abstract>>
-    ~ IBAN: String
-    ~ balance: Double
-    ~ interestRate : Double
-    ~ operationFee : Double
-    + AbstractBankAccount(String, Double, Double, Double)
-    + addInterest() 
-    ~ applyFee() 
-    ~ checkIBAN(String) 
-    + deposit(Double)
-    + getBalance() Double
-    + getIBAN() String
-    + getInterestRate() Double
-    + getOperationFee() Double
-    + setBalance(Double) 
-    + setIBAN(String)
-    + setInterestRate(Double) 
-    + setOperationFee(Double) 
-    + transfer(BankAccount, Double) Double
-    + withdraw(Double) Double
-}
-class BankAccount {
-    <<Interface>>
-    + addInterest()
-    + deposit(Double)
-    + getBalance() Double
-    + getIBAN() String
-    + getInterestRate() Double
-    + getOperationFee() Double
-    + setBalance(Double) 
-    + setIBAN(String) 
-    + setInterestRate(Double) 
-    + setOperationFee(Double) 
-    + transfer(BankAccount, Double) Double
-    + withdraw(Double) Double
-}
-class BankAccountEasy {
-    + BankAccountEasy(String, Double)
-    + transfer(BankAccount, Double) Double
-    + withdraw(Double) Double
-}
-class BankAccountPro {
-    + BankAccountPro(String, Double)
-    + deposit(Double) 
-    + withdraw(Double) Double
-}
+    direction BT
+    class AbstractBankAccount {
+        <<abstract>>
+        ~ IBAN: String
+        ~ balance: Double
+        ~ interestRate: Double
+        ~ operationFee: Double
+        + AbstractBankAccount(String, Double, Double, Double)
+        + addInterest()
+        ~ applyFee()
+        ~ checkIBAN(String)
+        + deposit(Double)
+        + getBalance() Double
+        + getIBAN() String
+        + getInterestRate() Double
+        + getOperationFee() Double
+        + setBalance(Double)
+        + setIBAN(String)
+        + setInterestRate(Double)
+        + setOperationFee(Double)
+        + transfer(BankAccount, Double) Double
+        + withdraw(Double) Double
+    }
+    class BankAccount {
+        <<Interface>>
+        + addInterest()
+        + deposit(Double)
+        + getBalance() Double
+        + getIBAN() String
+        + getInterestRate() Double
+        + getOperationFee() Double
+        + setBalance(Double)
+        + setIBAN(String)
+        + setInterestRate(Double)
+        + setOperationFee(Double)
+        + transfer(BankAccount, Double) Double
+        + withdraw(Double) Double
+    }
+    class BankAccountEasy {
+        + BankAccountEasy(String, Double)
+        + transfer(BankAccount, Double) Double
+        + withdraw(Double) Double
+    }
+    class BankAccountPro {
+        + BankAccountPro(String, Double)
+        + deposit(Double)
+        + withdraw(Double) Double
+    }
 
-AbstractBankAccount  ..>  BankAccount
-BankAccountEasy  --|>  AbstractBankAccount
-BankAccountPro  --|>  AbstractBankAccount
+    AbstractBankAccount ..> BankAccount
+    BankAccountEasy --|> AbstractBankAccount
+    BankAccountPro --|> AbstractBankAccount
 ```
 
 ---
@@ -461,68 +462,68 @@ Refer to the UML diagram, JavaDoc documentation, and unit tests for further insp
 
 ```mermaid
 classDiagram
-direction BT
-class AbstractShape {
-    <<abstract>>
-    ~ color : String
-    ~ id : String
-    + AbstractShape(String, String)
-    + getArea() Double
-    + getColor() String
-    + getId() String
-    + getPerimeter() Double
-    + move(Point) 
-    + resize(Double) 
-    + setColor(String) 
-    + setId(String) 
-}
-class Circle {
-    ~ Point center
-    ~ Double radius
-    + Circle(String, String, Point, Double)
-    + getArea() Double
-    + getCenter() Point
-    + getPerimeter() Double
-    + getRadius() Double
-    + move(Point) 
-    + resize(Double) 
-    + setCenter(Point) 
-    + setRadius(Double) 
-    + toString() String
-}
-class Rectangle {
-    ~ Point bottomRight
-    ~ Point upperLeft
-    + Rectangle(String, String, Point, Point)
-    + getArea() Double
-    + getBottomRight() Point
-    + getPerimeter() Double
-    + getUpperLeft() Point
-    + move(Point) 
-    + resize(Double) 
-    + setBottomRight(Point) 
-    + setUpperLeft(Point) 
-    + toString() String
-}
-class Computable {
-    <<Interface>>
-    + getArea() Double
-    + getPerimeter() Double
-}
-class Movable {
-    <<Interface>>
-    + move(Point) 
-}
-class Resizable {
-    <<Interface>>
-    + resize(Double) 
-}
+    direction BT
+    class AbstractShape {
+        <<abstract>>
+        ~ color: String
+        ~ id: String
+        + AbstractShape(String, String)
+        + getArea() Double
+        + getColor() String
+        + getId() String
+        + getPerimeter() Double
+        + move(Point)
+        + resize(Double)
+        + setColor(String)
+        + setId(String)
+    }
+    class Circle {
+        ~ Point center
+        ~ Double radius
+        + Circle(String, String, Point, Double)
+        + getArea() Double
+        + getCenter() Point
+        + getPerimeter() Double
+        + getRadius() Double
+        + move(Point)
+        + resize(Double)
+        + setCenter(Point)
+        + setRadius(Double)
+        + toString() String
+    }
+    class Rectangle {
+        ~ Point bottomRight
+        ~ Point upperLeft
+        + Rectangle(String, String, Point, Point)
+        + getArea() Double
+        + getBottomRight() Point
+        + getPerimeter() Double
+        + getUpperLeft() Point
+        + move(Point)
+        + resize(Double)
+        + setBottomRight(Point)
+        + setUpperLeft(Point)
+        + toString() String
+    }
+    class Computable {
+        <<Interface>>
+        + getArea() Double
+        + getPerimeter() Double
+    }
+    class Movable {
+        <<Interface>>
+        + move(Point)
+    }
+    class Resizable {
+        <<Interface>>
+        + resize(Double)
+    }
 
-AbstractShape  ..>  Computable
-AbstractShape  ..>  Movable
-AbstractShape  ..>  Resizable
-Circle  --|>  AbstractShape
-Rectangle  --|>  AbstractShape
+    AbstractShape ..> Computable
+    AbstractShape ..> Movable
+    AbstractShape ..> Resizable
+    Circle --|> AbstractShape
+    Rectangle --|> AbstractShape
 ```
 
 ---
@@ -546,42 +547,42 @@ Refer to the UML diagram, JavaDoc documentation, and unit tests for further insp
 
 ```mermaid
 classDiagram
-direction BT
-class AbstractPoly {
-    <<abstract>>
-    + AbstractPoly()
-    ~ derive() Array~Double~
-    + equals(Any) Boolean
-    + hashCode() Int
-    + toString() String
-}
-class ArrayPoly {
-    ~ coefficients : Array~Double~
-    + ArrayPoly(Array~Double~)
-    + coefficient(Int) Double
-    + coefficients() Array~Double~
-    + degree() Int
-    + derivative() Poly
-}
-class ListPoly {
-    ~ ArrayList~Double~ coefficients
-    + ListPoly(Array~Double~)
-    + coefficient(Int) Double
-    + coefficients() Array~Double~
-    + degree() Int
-    + derivative() Poly
-}
-class Poly {
-    <<Interface>>
-    + coefficient(Int) Douvle
-    + coefficients() Array~Double~
-    + degree() Int
-    + derivative() Poly
-}
+    direction BT
+    class AbstractPoly {
+        <<abstract>>
+        + AbstractPoly()
+        ~ derive() Array~Double~
+        + equals(Any) Boolean
+        + hashCode() Int
+        + toString() String
+    }
+    class ArrayPoly {
+        ~ coefficients: Array~Double~
+        + ArrayPoly(Array~Double~)
+        + coefficient(Int) Double
+        + coefficients() Array~Double~
+        + degree() Int
+        + derivative() Poly
+    }
+    class ListPoly {
+        ~ ArrayList~Double~ coefficients
+        + ListPoly(Array~Double~)
+        + coefficient(Int) Double
+        + coefficients() Array~Double~
+        + degree() Int
+        + derivative() Poly
+    }
+    class Poly {
+        <<Interface>>
+        + coefficient(Int) Douvle
+        + coefficients() Array~Double~
+        + degree() Int
+        + derivative() Poly
+    }
 
-AbstractPoly  ..>  Poly
-ArrayPoly  --|>  AbstractPoly
-ListPoly  --|>  AbstractPoly
+    AbstractPoly ..> Poly
+    ArrayPoly --|> AbstractPoly
+    ListPoly --|> AbstractPoly
 ```
 
 ---
@@ -603,80 +604,80 @@ Refer to the UML diagram, JavaDoc documentation, and unit tests for further insp
 
 ```mermaid
 classDiagram
-direction BT
-class Item {
-    <<Abstract>>
-    ~ title: String
-    ~ year: Int
-    + Item(String, Int)
-    + getTitle() String
-    + getYear() Int
-    + setTitle(String) void
-    + setYear(Int) void
-    + equals(Object) Boolean
-    + hashCode() Int
-}
-class Book {
-    ~ pages: Int
-    + Book(String, Int, Int)
-    + getPages() Int
-    + setPages(Int) 
-    + toString() String
-}
-class Dvd {
-    ~ length: Int
-    + Dvd(String, Int, Int)
-    + getLength() Int
-    + setLength(Int) 
-    + toString() String
-}
-class Person {
-    ~ id: String
-    ~ lastname : String
-    ~ name : String
-    + Person(String, String, String)
-    + getId() String
-    + getLastname() String
-    + getName() String
-    + setId(String) 
-    + setLastname(String) 
-    + setName(String) 
-    + equals(Any) Boolean
-    + hashCode() Int
-    + toString() String
-}
-class Rent {
-    ~ begin : LocalDate
-    ~ end : LocalDate
-    ~ item : Item
-    ~ person : Person
-    + Rent(Item, Person, LocalDate, LocalDate)
-    + getBegin() LocalDate
-    + getEnd() LocalDate
-    + getItem() Item
-    + getPerson() Person
-    + setBegin(LocalDate) 
-    + setEnd(LocalDate) 
-    + setItem(Item) 
-    + setPerson(Person) 
-    + isExpired(LocalDate) Boolean
-    + equals(Object) Boolean
-    + hashCode() Int
-    + toString() String
-}
-class Library {
-    ~ rents : ArrayList~Rent~
-    + Library()
-    + addRent(Rent) Boolean
-    + removeRent(Rent) Boolean
-    + getExpired(LocalDate) ArrayList~Rent~
-}
+    direction BT
+    class Item {
+        <<Abstract>>
+        ~ title: String
+        ~ year: Int
+        + Item(String, Int)
+        + getTitle() String
+        + getYear() Int
+        + setTitle(String) void
+        + setYear(Int) void
+        + equals(Object) Boolean
+        + hashCode() Int
+    }
+    class Book {
+        ~ pages: Int
+        + Book(String, Int, Int)
+        + getPages() Int
+        + setPages(Int)
+        + toString() String
+    }
+    class Dvd {
+        ~ length: Int
+        + Dvd(String, Int, Int)
+        + getLength() Int
+        + setLength(Int)
+        + toString() String
+    }
+    class Person {
+        ~ id: String
+        ~ lastname: String
+        ~ name: String
+        + Person(String, String, String)
+        + getId() String
+        + getLastname() String
+        + getName() String
+        + setId(String)
+        + setLastname(String)
+        + setName(String)
+        + equals(Any) Boolean
+        + hashCode() Int
+        + toString() String
+    }
+    class Rent {
+        ~ begin: LocalDate
+        ~ end: LocalDate
+        ~ item: Item
+        ~ person: Person
+        + Rent(Item, Person, LocalDate, LocalDate)
+        + getBegin() LocalDate
+        + getEnd() LocalDate
+        + getItem() Item
+        + getPerson() Person
+        + setBegin(LocalDate)
+        + setEnd(LocalDate)
+        + setItem(Item)
+        + setPerson(Person)
+        + isExpired(LocalDate) Boolean
+        + equals(Object) Boolean
+        + hashCode() Int
+        + toString() String
+    }
+    class Library {
+        ~ rents: ArrayList~Rent~
+        + Library()
+        + addRent(Rent) Boolean
+        + removeRent(Rent) Boolean
+        + getExpired(LocalDate) ArrayList~Rent~
+    }
 
-Book  --|>  Item
-Dvd  --|>  Item
-Rent "*" --> "1" Person
-Rent "*" --> "1" Item
-Library "1" --> "*" Rent
+    Book --|> Item
+    Dvd --|> Item
+    Rent "*" --> "1" Person
+    Rent "*" --> "1" Item
+    Library "1" --> "*" Rent
 ```
 
 ---

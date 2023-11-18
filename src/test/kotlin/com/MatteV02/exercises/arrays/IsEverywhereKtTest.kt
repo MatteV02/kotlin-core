@@ -33,10 +33,10 @@ class IsEverywhereKtTest : FunSpec({
             IsEverywhereTestData(arrayOf(1, 2, 1, 3), 1, true),
             IsEverywhereTestData(arrayOf(1, 2, 1, 3), 2, false),
             IsEverywhereTestData(arrayOf(1, 2, 1, 3, 4), 1, false),
-        ) {
-            (v, value, expected) -> run {
+        ) { (v, value, expected) ->
+            run {
                 isEverywhere(v, value) shouldBe expected
-        }
+            }
         }
     }
 })

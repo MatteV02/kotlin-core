@@ -12,10 +12,10 @@ class EqualIsNotKtTest : FunSpec({
             TestData("This is not", false),
             TestData("This is notnot", true),
             TestData("noisxxnotyynotxisi", true)
-        ) {
-            (string, expected) -> run {
+        ) { (string, expected) ->
+            run {
                 equalIsNot(string) shouldBe expected
-        }
+            }
         }
     }
 })

@@ -3,6 +3,7 @@ package com.MatteV02.exercises.oop.basic.Circle
 import java.awt.Point
 import kotlin.math.PI
 import kotlin.math.pow
+import kotlin.math.sqrt
 
 class Circle(var center: Point, radius: Int) {
 
@@ -22,8 +23,10 @@ class Circle(var center: Point, radius: Int) {
 
     fun getArea() = PI * radius.toDouble().pow(2)
 
-    fun contains(point: Point) = ((center.getX() - point.getX()).pow(2) +
-            (center.getY() - point.getY()).pow(2)).pow(1.0/2) <= radius
+    fun contains(point: Point) = sqrt(
+        (center.getX() - point.getX()).pow(2) +
+                (center.getY() - point.getY()).pow(2)
+    ) <= radius
 
     fun translate(dx: Int, dy: Int) {
         center.translate(dx, dy)
