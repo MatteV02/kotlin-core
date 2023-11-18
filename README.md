@@ -1,5 +1,3 @@
-# Kotlin-core
-
 ![logo](images/kotlin-core-logo.png)
 
 > [!WARNING]
