@@ -47,25 +47,35 @@ You can use the following two methods for computing the least common multiple an
 integer numbers. These methods are not part of the public interface of the class.
 
 ```kotlin
-
 import kotlin.math.absoluteValue
 import kotlin.math.max
 import kotlin.math.min
 
 fun greatestCommonDivisor(a: Int, b: Int): Int {
-  val max = max(a, b)
-  val min = min(a, b)
-
-  val rest = max % min
-  return if (max % min == 0) {
-    min
-  } else {
-    greatestCommonDivisor(min, rest)
-  }
+	if (a == 0) {
+		if (b == 0) {
+			throw IllegalArgumentException("cannot pass (0,0) to greatestCommonDivisor")
+		}
+		return b
+	}
+	
+	if (b == 0) {
+        return a
+    }
+	
+	val max = max(a, b)
+	val min = min(a, b)
+	
+	val rest = max % min
+	return if (max % min == 0) {
+	  min
+	} else {
+	  greatestCommonDivisor(min, rest)
+	}
 }
 
 fun leastCommonMultiple(a: Int, b: Int): Int {
-  return (a * b).absoluteValue / greatestCommonDivisor(a, b)
+	return (a * b).absoluteValue / greatestCommonDivisor(a, b)
 }
 ```
 
