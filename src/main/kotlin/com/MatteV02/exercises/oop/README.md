@@ -233,7 +233,7 @@ classDiagram
 In the constructor, supply the names of the sender and the recipient:
 
 ```kotlin
-data class Letter(val from: String, val to: String)
+class Letter(val from: String, val to: String)
 ```
 
 Supply a method to add a line of text to the body of the letter.
