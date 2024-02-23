@@ -346,7 +346,7 @@ classDiagram
         <<Interface>>
         + addPerson(Person) Boolean
         + removePerson(Person) Boolean
-        + searchByLastname(String) Array~String~
+        + searchByLastname(String) Array~Person~
         + searchByNameAndLastname(String, String) Array~Person~
     }
     class PhoneBookArray {

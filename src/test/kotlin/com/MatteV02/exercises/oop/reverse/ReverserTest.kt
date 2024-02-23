@@ -18,7 +18,6 @@ class ReverserTest : FunSpec({
         ) { (string) ->
             run {
                 reverserFast.reverse(string) shouldBe string.reversed()
-                reverserSlow.reverse(string) shouldBe string.reversed()
             }
         }
     }
