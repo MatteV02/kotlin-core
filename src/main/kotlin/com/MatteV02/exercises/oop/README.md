@@ -478,8 +478,8 @@ classDiagram
         + setId(String)
     }
     class Circle {
-        ~ Point center
-        ~ Double radius
+        ~ center: Point
+        ~ radius: Double
         + Circle(String, String, Point, Double)
         + getArea() Double
         + getCenter() Point
@@ -492,8 +492,8 @@ classDiagram
         + toString() String
     }
     class Rectangle {
-        ~ Point bottomRight
-        ~ Point upperLeft
+        ~ bottomRight: Point
+        ~ upperLeft: Point
         + Rectangle(String, String, Point, Point)
         + getArea() Double
         + getBottomRight() Point
