@@ -10,7 +10,7 @@
 The method has the following prototype:
 
 ```kotlin
-fun downsize(list: List<String>, n: Int)
+fun downsize(list: MutableList<String>, n: Int)
 ```
 
 where:
@@ -242,7 +242,7 @@ where:
 
 ---
 
-**[InvertMap.kt]** Write a static method accepting a `Map<Integer, String>` and returning a `Map<String, Integer>` in
+**[InvertMap.kt]** Write a static method accepting a `Map<Int, String>` and returning a `Map<String, Integer>` in
 which the original keys and values have been inverted.
 In case of repeated values (thus associated to multiple keys) you can select one of the keys.
 
@@ -254,7 +254,7 @@ Examples:
 The method has the following prototype:
 
 ```kotlin
-fun invertMap(src: Map<Integer, String>): Map<String, Integer>
+fun invertMap(src: Map<Int, String>): Map<String, Int>
 ```
 
 where:
