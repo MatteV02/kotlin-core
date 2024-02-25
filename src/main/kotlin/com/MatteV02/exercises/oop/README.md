@@ -574,7 +574,7 @@ classDiagram
     }
     class Poly {
         <<Interface>>
-        + coefficient(Int) Douvle
+        + coefficient(Int) Double
         + coefficients() Array~Double~
         + degree() Int
         + derivative() Poly
