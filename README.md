@@ -25,7 +25,8 @@ issues! Any help is accepted!
       - [ ] library tests
       - [ ] polynomials tests
       - [ ] shape tests
-	- [ ] [collections](README.md#3-data-structures-kotlin-collections)
+	- [x] [collections](README.md#3-data-structures-kotlin-collections)
+      - [ ] exercises with I/O
 	- [ ] [generics](README.md#4-generic-data-structures-generics)
 	- [ ] [functional](README.md#5-functional-programming)
 	- [ ] [exception](README.md#6-exceptions)
