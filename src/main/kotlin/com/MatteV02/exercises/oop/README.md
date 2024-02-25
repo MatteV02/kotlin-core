@@ -666,11 +666,11 @@ classDiagram
         + toString() String
     }
     class Library {
-        ~ rents: ArrayList~Rent~
+        ~ rents: MutableSet~Rent~
         + Library()
         + addRent(Rent) Boolean
         + removeRent(Rent) Boolean
-        + getExpired(LocalDate) ArrayList~Rent~
+        + getExpired(LocalDate) Set~Rent~
     }
 
     Book --|> Item
