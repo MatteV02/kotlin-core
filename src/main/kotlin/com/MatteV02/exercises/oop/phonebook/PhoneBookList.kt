@@ -3,7 +3,7 @@ package com.MatteV02.exercises.oop.phonebook
 class PhoneBookList : PhoneBook {
     internal val phoneBook = ArrayList<Person>(MAX_PERSONS)
     override fun addPerson(person: Person): Boolean {
-        if (phoneBook.size >= MAX_PERSONS) {
+        if (phoneBook.size >= MAX_PERSONS || person == Person("", "", "")) {
             return false
         }
 
@@ -28,6 +28,6 @@ class PhoneBookList : PhoneBook {
     }
 
     companion object {
-        val MAX_PERSONS = 256
+        const val MAX_PERSONS = 256
     }
 }

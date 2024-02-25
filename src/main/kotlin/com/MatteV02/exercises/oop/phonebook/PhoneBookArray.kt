@@ -1,6 +1,7 @@
 package com.MatteV02.exercises.oop.phonebook
 
 class PhoneBookArray : PhoneBook {
+    @Suppress("MemberVisibilityCanBePrivate")
     internal val phoneBookArray = Array(MAX_PERSONS){Person("", "", "")}
 
     private var size = 0
@@ -8,7 +9,7 @@ class PhoneBookArray : PhoneBook {
     internal fun realArray() = phoneBookArray.sliceArray(0..<size)
 
     override fun addPerson(person: Person): Boolean {
-        if (size >= MAX_PERSONS) {
+        if (size >= MAX_PERSONS || person == Person("", "", "")) {
             return false
         }
 
