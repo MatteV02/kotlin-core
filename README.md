@@ -20,7 +20,11 @@ issues! Any help is accepted!
 	- [x] [warmup](README.md#1-basics)
 	- [x] [arrays](README.md#1-basics)
 	- [x] [strings](README.md#1-basics)
-	- [ ] [oop](README.md#2-object-oriented-design)
+	- [x] [oop](README.md#2-object-oriented-design)
+      - [ ] bankaccount tests
+      - [ ] library tests
+      - [ ] polynomials tests
+      - [ ] shape tests
 	- [ ] [collections](README.md#3-data-structures-kotlin-collections)
 	- [ ] [generics](README.md#4-generic-data-structures-generics)
 	- [ ] [functional](README.md#5-functional-programming)
