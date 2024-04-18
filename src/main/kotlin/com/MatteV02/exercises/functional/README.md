@@ -2,7 +2,7 @@
 
 ## Kotlin Exercises (Functional)
 
-**[JustPrint.kt]** Write two static generic methods receiving, respectively, a generic List and a generic Map and
+**[JustPrint.kt]** Write two functions receiving, respectively, a generic List and a generic Map and
 printing to standard output their content following the template below. Both methods must be 1 line long (see
 List.forEach(), Map.forEach()).
 
