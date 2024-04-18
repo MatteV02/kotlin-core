@@ -99,7 +99,7 @@ Examples:
 The method has the following prototype:
 
 ```kotlin
-fun noTeen(nums : List<Integer>) : List<Integer>
+fun noTeen(nums : List<Int>) : List<Int>
 ```
 
 where:
@@ -120,7 +120,7 @@ Examples:
 The method has the following prototype:
 
 ```kotlin
-fun oneTen(nums : List<Integer>) : List<Integer>
+fun oneTen(nums : List<Int>) : List<Int>
 ```
 
 where:
@@ -141,7 +141,7 @@ Examples:
 The method has the following prototype:
 
 ```kotlin
-fun twoTwo(nums : List<Integer>) : List<Integer>
+fun twoTwo(nums : List<Int>) : List<Int>
 ```
 
 where:
@@ -162,7 +162,7 @@ Examples:
 The method has the following prototype:
 
 ```kotlin
-fun squareFive(nums : List<Integer>) : Long
+fun squareFive(nums : List<Int>) : Int
 ```
 
 where:
