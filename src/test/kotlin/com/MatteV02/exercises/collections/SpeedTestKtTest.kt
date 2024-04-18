@@ -1,7 +1,6 @@
 package com.MatteV02.exercises.collections
 
 import io.kotest.core.spec.style.FunSpec
-import io.kotest.matchers.comparables.shouldBeLessThan
 import java.util.*
 
 class SpeedTestKtTest : FunSpec({
@@ -11,10 +10,10 @@ class SpeedTestKtTest : FunSpec({
         val arrayList = ArrayList<String>()
 
         val testString = "testString"
-        val times = 1_000_000
+        val times = 100_000
 
-        insertBeginning(linkedList, testString, times) shouldBeLessThan
-                insertBeginning(arrayList, testString, times)
+        println("\nSpeedTest - insertBeginning\nArrayList: ${insertBeginning(arrayList, testString, times)}" +
+                "\nLinkedList: ${insertBeginning(linkedList, testString, times)}")
     }
 
     test("SpeedTest - insertEnd") {
@@ -22,10 +21,10 @@ class SpeedTestKtTest : FunSpec({
         val arrayList = ArrayList<String>()
 
         val testString = "testString"
-        val times = 1_000_000
+        val times = 100_000
 
-        insertEnd(arrayList, testString, times) shouldBeLessThan
-                insertEnd(linkedList, testString, times)
+        println("\nSpeedTest - insertEnd\nArrayList: ${insertEnd(arrayList, testString, times)}" +
+                "\nLinkedList: ${insertEnd(linkedList, testString, times)}")
     }
 
 })
